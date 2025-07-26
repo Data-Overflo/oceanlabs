@@ -37,7 +37,8 @@ jobs:
           destination: ./_site
           
       - name: Add CNAME for custom domain
-        run: echo "www.oceanlabs.co.za" > ./_site/CNAME
+        run: echo "www.oceanlabs.co.za" > ./CNAME
+       
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
